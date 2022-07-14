@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* capa de contenido */
+
+.card {
+  background-color: royalblue;
+  color: white;
+  width: auto;
+
+  display: block;
+  width: 300px;
+  /* ancho -------------*/
+  /* max-width: 300px;
+  min-width: 200px;
+  width: 100px; */
+  /* alto --------------*/
+  /* width: auto; */
+  /* height: auto; */
+  /* overflow: hidden; */
+  /* max-height: 300px; */
+  /* overflow: auto; */
+
+  /* Arriba, derecha, abajo, izquierda */
+  /* padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 60px;
+  padding-left: 80px; */
+
+  padding: 15px 45px;
+
+  border-style: solid;
+  border-color: purple;
+
+  /* border-top-width: 20px;
+  border-right-width: 30px;
+  border-bottom-width: 50px;
+  border-left-width: 70px; */
+
+  border-width: 20px;
+
+  /* double, dashed, dotted, groove, ridge */
+  /* border-style: dotted dashed double solid;
+  border-style: dotted dashed double;
+  border-style: dotted dashed;
+  border-style: dotted; */
+  /* double, dashed, dotted, groove, ridge */
+
+  /* border-top-color: crimson;
+  border-right-color: black;
+  border-bottom-color: yellow;
+  border-left-color: purple; */
+
+  /* border-color: crimson black yellow purple;
+  border-color: crimson black yellow;
+  border-color: crimson black;
+  border-color: crimson; */
+
+  border: 5px solid crimson;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  padding: 45px;
+  border: 5px solid chocolate;
+}
+
+.card__title {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.card__paragraph {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main {
+  background-color: steelblue;
+  color: white;
+  padding: 0.1px solid transparent;
+}
+
+.main__title {
+  margin-top: 50px;
+}
+.footer {
+  background-color: slateblue;
+  color: white;
+} */
