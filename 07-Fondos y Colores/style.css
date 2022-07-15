@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  margin: 50px auto;
+  width: 90%;
+  height: 500px;
+
+  /* Color de fondo de un elemento */
+  /* background-color: #723cd6; */
+
+  /* Agregar imagenes de fondo */
+  background-image: linear-gradient(
+      rgba(24, 7, 152, 0.529),
+      rgba(255, 0, 0, 0.357)
+    ),
+    url("img.jpg");
+  color: white;
+  /* Para que la imagen no se repita */
+  background-repeat: no-repeat;
+
+  /* Posicionar a la imagen con top-right-bottom-left */
+  background-position: center;
+
+  /* Darle a un tamaño a la imagen */
+  background-size: contain;
+
+  text-align: center;
+  padding: 200px;
+}
