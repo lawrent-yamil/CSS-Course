@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  height: 500px;
+}
+
+.container {
+  padding: 40px;
+  /* font-size: 10px; */
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: yellow;
+
+
+
+  width: 300px;
+}
+
+.container__child {
+  
+}
+
+.title {
+  /* font-size: 3rem; */
+  /* font-size: 48px; */
+
+  /* font-size: 15px; */
+  font-size: 3em;
+
+  width: 5em;
+  background-color: yellow;
+}
+
+/* 1 rem equivale a 16 pixeles o a lo que equivalga
+  la raiz del documento o el html
+*/
+
+/* 1 em es equivalente a el fontsize de su padre o ancestro
+  que tenga un fontsize declarado
+*/
+
+/* Los porcentajes son relativos al tamaño del padre de el elemento */
