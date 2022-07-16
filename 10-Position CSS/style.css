@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 40px auto;
+  border: 4px solid;
+  min-height: 500px;
+}
+
+.element {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.static {
+  /* Por defecto en todos los elementos */
+  background-color: tomato;
+  position: static;
+}
+
+/* 4 valores ofset 
+  top,
+  right,
+  bottom,
+  left
+*/
+.relative {
+  /* Se puede mover relativo a su posicion */
+  background-color: steelblue;
+  position: relative;
+  left: 30px;
+  z-index: 100;
+}
+
+.absolute {
+  /* Es removido copletamente del flujo */
+  /* 
+    Se referencia a su ancestro o contenedor mas cercano
+    que tenga un position difererente de static
+  */
+  background-color: teal;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  z-index: 200;
+}
+
+.fixed {
+  /* Se queda pegado a la pantalla */
+  /* Se basa siempre en el viewport(con algunas exsepciones) */
+  background-color: crimson;
+  position: fixed;
+  top: 80px;
+  z-index: 300;
+}
