@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* @media (max-width: 600px) {
+  body {
+    background-color: #f2f2f2;
+  }
+} */
+
+@media (min-width: 800px) {
+  body {
+    background-color: crimson;
+  }
+  .img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  }
+}
