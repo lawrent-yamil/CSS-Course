@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+  margin: 50px;
+  display: inline-block;
+  background-color: steelblue;
+  color: white;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 2em;
+  transition: 0.3;
+}
+
+/* Pseudoclases */
+
+/* Cuando el mause para por encima del elemento */
+.link:hover {
+  background-color: #008080;
+}
+
+/* Cuando se preciona el elemento */
+.link:active {
+  background: tomato;
+  transform: translateY(10px);
+}
+
+/* Cuando haya sido apuntado por ejemplo por medio de un link */
+.element1:target {
+  transform: translateX(100%);
+}
+
+.check {
+  margin: 50px;
+}
+
+/* Cuando esta chekeado */
+.check:checked + .label {
+  background-color: green;
+}
+
+.label {
+  background-color: crimson;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.input {
+  margin: 50px;
+  width: 250px;
+  height: 70px;
+}
+
+/* Cuando esta seleccionado */
+.input:focus {
+  color: #fff;
+  background-color: #000;
+}
+
+.validacion {
+  padding: .5em 2em;
+  margin: 50px;
+  font-size: 1rem;
+}
+
+.validacion + .message::after {
+  content: "Felicidades, has ingresado un texto";
+  display: block;
+  background-color: green;
+  padding: 1em;
+  color: #fff;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.validacion:placeholder-shown + .message::after {
+  content: "Aun no has escrito nada en el input";
+  display: block;
+  background-color: crimson;
+  padding: 1em;
+  color: #fff;
+  margin: 0 auto;
+  width: max-content;
+}
+
+/* Cuando se muestra el placeholder */
+.validacion:placeholder-shown {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Pseudoelementos */
+
+/* .element1 {
+  background-color: tomato;
+  width: max-content;
+  font-size: 2rem;
+  color: #fff;
+  margin: 50px;
+}
+
+.element1::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #000;
+}
+
+.element1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: green;
+} */
