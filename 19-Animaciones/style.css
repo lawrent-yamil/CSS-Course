@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 60px;
+  background-color: tomato;
+  animation-name: cambiar-color;
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 2;
+  /* animation-direction: alternate; */
+  animation-fill-mode: forwards;
+  /* animation-delay: 2s; */
+  animation: grow 1s ease-in-out 2s;
+  /* El primer segundo simpre sera para la duracion
+    de la animacion y el segundo
+    para el delay 
+  */
+}
+
+.box:hover {
+  animation-play-state: paused;
+}
+
+@keyframes cambiar-color {
+  0% {
+    transform: translate(0);
+    background-color: crimson;
+  }
+  20% {
+    transform: translate(100%);
+    background-color: crimson;
+  }
+  33% {
+    transform: translate(100%, 100%);
+    background-color: slateblue
+  }
+  57% {
+    transform: translate(0, 100%);
+    background-color: teal;
+  }
+  100% {
+    transform: translate(0);
+    background-color: black;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(1.5);
+  }
+  100% {
+    transform: scaleX(2.5);
+  }
+}
