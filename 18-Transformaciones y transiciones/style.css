@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.element {
+  margin: 60px;
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  transition: .3s;
+  transform: ;
+  /* Transform me permite agregar transormaciones en css */
+  /* transform: translate(100px, 100px); Translacion en x y */
+
+  /* Rotar un elemento Valores angulares*/
+  /* transform: rotate(45deg); Rotacion en grados */
+  /* 
+    0-360 deg
+    0-400 grad
+    0-6.28319 rad
+    0-1 turn
+  */
+}
+
+.element:hover {
+  /* transform: rotate(360deg); */
+  /* transform: rotate(2turn); */
+  /* width: 400px; */
+
+  /* Escalar, aumentar o decrementar el valor de un elemento */
+  /* transform: scaleX(2); */
+  /* transform-origin: left top; Que empieze desde el valor  */
+
+  /* Si solo se le da un valor sera para X y Y pero si se le dan 
+    dos uno sera para X y el otro para Y 
+  */
+  /* transform: scale(2); */
+
+  /* Sesgar al elemento skewX y skewY */
+  /* transform: skewX(45deg); */
+  /* transform: skewY(45deg); */
+
+  /* 
+    Todas las propieades de transform
+    pueden ir en la misma linea por que si van 
+    separadas se sobreescriben
+  */
+}
+
+
+/* Transiciones */
+.element {
+  transition: all .3s;
+  /* 
+    transition-property: propiedades de transicion
+    transition-duration: duracion de la transicion
+    transition-timing-function: funcion de tiempo de la transicion
+    transition-delay: retraso de la transicion
+  */
+}
